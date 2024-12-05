@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site do Darth Butter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a1a;
+            color: #fff;
+        }
+        header {
+            background-color: #333;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #ffa500;
+        }
+        nav {
+            margin: 20px 0;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            color: #ffa500;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+        footer {
+            background-color: #333;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        footer p {
+            margin: 0;
+            color: #aaa;
+        }
+        form {
+            margin: 20px 0;
+        }
+        input, textarea, button {
+            margin: 10px 0;
+            padding: 10px;
+            font-size: 1em;
+            width: 80%;
+            max-width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo ao Império do Darth Butter</h1>
+    </header>
+    <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#questionario">Questionário</a>
+        <a href="#contato">Contato</a>
+    </nav>
+    <main>
+        <section id="sobre">
+            <h2>Sobre o Sith Lord</h2>
+            <p>Darth Butter é o governante supremo, estrategista incomparável e mestre da manipulação. Junte-se ao Império!</p>
+        </section>
+        <section id="questionario">
+            <h2>Questionário</h2>
+            <form method="POST" action="/log_ip">
+                <label for="name">Seu Nome:</label><br>
+                <input type="text" id="name" name="name" required><br>
+                <label for="feedback">Deixe seu Feedback:</label><br>
+                <textarea id="feedback" name="feedback" rows="4" required></textarea><br>
+                <button type="submit">Enviar Respostas</button>
+            </form>
+        </section>
+        <section id="contato">
+            <h2>Contato</h2>
+            <p>Envie uma mensagem para: <a href="mailto:darthbutter@empire.com">darthbutter@empire.com</a></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 - Império do Darth Butter. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
